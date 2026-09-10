@@ -61,7 +61,7 @@ export class ArtworksService {
         },
     ]
 
-    getArtworks(){
+    getArtworks() {
         return this.artworks;
     }
 }
