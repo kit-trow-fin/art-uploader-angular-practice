@@ -1,3 +1,14 @@
 <section>
-    <p>{{artwork.Title}}</p>
+    <p id="title">{{artwork.Title}}</p>
+    <p>by {{artwork.ArtistName}}</p>
+    <p>Completed {{artwork.YearCompleted}}</p>
+    <p>
+        {{artwork.Collection}}@if (artwork.Location) {, {{artwork.Location}}}
+    </p>
+    @if(artwork.Movement){
+        <p>{{artwork.Movement}}</p>
+    }
+    @if (artwork.Seen) {
+        <p>(✿◡‿◡)</p>
+    } <!--make some ascii art for seen-->
 </section>
