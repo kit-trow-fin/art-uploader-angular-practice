@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   imports: [],
@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './artwork.component.html',
 })
 
-export class Artwork {}
+export class ArtworkComponent {
+  @Input({required: true}) artwork!: Artwork;
+}

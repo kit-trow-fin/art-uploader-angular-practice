@@ -1,1 +1,5 @@
-<p>artworks works!</p>
+<main>
+    @for (artwork of Artworks; track artwork.Id ){
+        <app-artwork [artwork]="artwork"/>
+    }
+</main>

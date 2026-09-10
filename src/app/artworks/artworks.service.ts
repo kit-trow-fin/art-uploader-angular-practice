@@ -12,7 +12,8 @@ export class ArtworksService {
             Movement: "Pre-Raphaelite",
             Collection: "Art Gallery of South Australia",
             Location: "Adelaide",
-            Seen: false
+            Seen: false,
+            Id: "1"
         },
         {
             ImgUrl: "https://upload.wikimedia.org/wikipedia/commons/1/13/Millais_Order_of_Release.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail_unscaled",
@@ -22,7 +23,8 @@ export class ArtworksService {
             Movement: "Pre-Raphaelite",
             Collection: "Tate Britain",
             Location: "London",
-            Seen: false
+            Seen: false,
+            Id: "2"
         },
         {
             ImgUrl: "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Annunciation_%28Leonardo_c._1472%E2%80%931476%29.jpg/1920px-Annunciation_%28Leonardo_c._1472%E2%80%931476%29.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
@@ -32,7 +34,8 @@ export class ArtworksService {
             Movement: "Renaissance",
             Collection: "Uffizi",
             Location: "Florence",
-            Seen: true
+            Seen: true,
+            Id: "3"
         },
         {
             ImgUrl: "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Pieter_Bruegel_the_Elder_-_The_Fall_of_the_Rebel_Angels_-_RMFAB_584_%28derivative_work%29.jpg/960px-Pieter_Bruegel_the_Elder_-_The_Fall_of_the_Rebel_Angels_-_RMFAB_584_%28derivative_work%29.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
@@ -42,7 +45,8 @@ export class ArtworksService {
             YearCompleted: "1562",
             Collection: "Royal Museums of Fine Arts of Belgium",
             Location: "Brussels",
-            Seen: true
+            Seen: true,
+            Id: "4"
         },
         {
             ImgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Lady_with_an_Ermine_-_Leonardo_da_Vinci_%28adjusted_levels%29.jpg/960px-Lady_with_an_Ermine_-_Leonardo_da_Vinci_%28adjusted_levels%29.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
@@ -52,7 +56,12 @@ export class ArtworksService {
             YearCompleted: "1491",
             Collection: "Czartoryski Museum",
             Location: "Kraków",
-            Seen: false
+            Seen: false,
+            Id: "5"
         },
     ]
+
+    getArtworks(){
+        return this.artworks;
+    }
 }

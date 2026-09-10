@@ -1,4 +1,5 @@
 interface Artwork {
+    Id: string,
     ImgUrl: string,
     Title: string,
     ArtistName: string,
